@@ -1,21 +1,38 @@
 
 import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Form from 'react-bootstrap/Form';
 
 function App() {
   return (
     <div classNameName="App">
-      <p> werklflf;;v </p>
-      <button classNameName='btn btn-success'> MOssaad </button>
-      <div className="mb-3">
-  <label for="exampleFormControlInput1" className="form-label">Email address</label>
-  <input type="email" classNameName="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+      <p> welcome to react javascript </p>
+      
+      
+
+      <Form.Group controlId="formFile" className="mb-3">
+        <Form.Label>enter your given and last name</Form.Label>
+        <Form.Control type="file" />
+      </Form.Group>
+      <Form.Group controlId="formFileMultiple" className="mb-3">
+        <Form.Label>Date and place of birth</Form.Label>
+        <Form.Control type="file" multiple />
+      </Form.Group>
+      <Form.Group controlId="formFileDisabled" className="mb-3">
+        <Form.Label>Occupation and place of work</Form.Label>
+        <Form.Control type="file" disabled />
+      </Form.Group>
+      <Form.Group controlId="formFileSm" className="mb-3">
+        <Form.Label>Nationality</Form.Label>
+        <Form.Control type="file" size="sm" />
+      </Form.Group>
+      <Form.Group controlId="formFileLg" className="mb-3">
+        <Form.Label>status of residence</Form.Label>
+        <Form.Control type="file" size="lg" />
+      </Form.Group>
+
 </div>
-<div classNameName="mb-3">
-  <label for="exampleFormControlTextarea1" className="form-label">Example textarea</label>
-  <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-</div>
-    </div>
-  );
+)
 }
 
 export default App;
